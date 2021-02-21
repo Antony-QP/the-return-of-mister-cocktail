@@ -1,0 +1,10 @@
+<div class="container">
+    <% @cocktails.each do |cocktail| %>
+    <div class="card col-md mt-2 mr-2 bg-info w50">
+      <!-- <img class="card-img-top" src="..." alt="Card image cap" /> -->
+      <div class="card-body">
+        <%= link_to cocktail_path(cocktail) do %> <%= cocktail.name %> <% end %>
+      </div>
+    </div>
+    <% end %>
+</div>
